@@ -44,6 +44,14 @@ public class Program {
 		System.out.println("UPDATE COMPLETE!");
 		
 		
+		
+		System.out.println("====== TEST DELETE======");
+		sellerDao.deleteById(1);
+		System.out.println("DELETE COMPLETE!");
+		
+		
+		list = sellerDao.findAll();
+		list.forEach(System.out::println);
 	}
 
 }
