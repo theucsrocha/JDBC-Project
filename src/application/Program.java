@@ -25,6 +25,11 @@ public class Program {
 		
 		list.forEach(System.out::println);
 		
+		System.out.println("====== FIND ALL======");
+		list = sellerDao.findAll();
+		list.forEach(System.out::println);
+		 
+		
 		
 	}
 
